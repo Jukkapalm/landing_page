@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <!-- Sivun perusasetukset ja metatiedot -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jukka Palm | Ohjelmistokehittäjä</title>
+        <meta name="description" content="Jukka Palm, tieto- ja viestintätekniikaan opiskelija, ohjelmistokehittäjä. Täältä löydät osaamani teknologiat, koulutuksen ja portfolioni">
+
+        <!-- Ulkoiset tyylitiedostot -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+        <!-- Teknologia ikonit -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+        <!-- Oma tyylitiedosto -->
+        <link rel="stylesheet" href="css/tyyli.css">
+    </head>
+    <body>
+
+        <!-- Mobiilinavigaatio. Näkyvissä vai pienemmillä näytöillä kuin Boostrapin lg koko -->
+        <nav class="navbar d-lg-none fixed-top" aria-label="Mobiilinavigaatio">
+            <div class="container d-flex align-items-center">
+
+                <!-- Nimi ja titteli mobiilinäkymässä -->
+                <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center">
+                    <span class="navbar-brand mb-0 p-0 h2 fw-bold" style="color: #084C61; font-family: 'Chakra Petch', sans-serif;">Jukka Palm</span>
+                    <span class="titteli d-block d-md-none small fw-bold">Software & Web Dev Trainee</span>
+                </div>
+
+                <!-- Tässä titteli siirtyy keskelle tabletilla -->
+                <div class="d-none d-md-block mx-auto">
+                    <span class="titteli">Software & Web Dev Trainee</span>
+                </div>
+
+                <!-- Hampurilaisvalikon painike -->
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Mobiilivalikon linkit -->
+                <div class="collapse navbar-collapse w-100" id="mobileMenu">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item"><a class="nav-link" href="#tietoa-minusta">Tietoa minusta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#teknologiat">Teknologiat</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#koulutus">Koulutus</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ota-yhteytta">Ota yhteyttä</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Sidebar: kiinteä sivupalkki desktop käyttäjille -->
+        <aside class="sidebar d-none d-lg-flex">
+            <div class="sidebar-top">
+
+                <!-- Profiilikuva -->
+                <div class="profile-circle">
+                    <img src="images/jp.jpeg" alt="Jukka Palm">
+                </div>
+                <h3 class="mb-0">Jukka Palm</h3>
+                <span class="titteli small text-center fw-bold">Software & Web Dev Trainee</span>
+            </div>
+
+            <!-- Sidebarin Navigaatio linkit -->
+            <nav class="sidebar-nav" aria-label="Päänavigaatio">
+                <ul class="nav flex-column w-100">
+                    <li class="nav-item"><a class="nav-link" href="#tietoa-minusta">Tietoa minusta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#teknologiat">Teknologiat</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#koulutus">Koulutus</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ota-yhteytta">Ota yhteyttä</a></li>
+                </ul>
+            </nav>
+
+            <!-- Sidebarin somelinkit ja Copyright -->
+            <div class="sidebar-footer">
+                <div class="social-links mb-2">
+                    <a href="#" target="_blank" class="social-icon" title="GitHub"><i class="devicon-github-original"></i></a>
+                    <a href="#" target="_blank" class="social-icon" title="LinkedIn"><i class="devicon-linkedin-plain"></i></a>
+                </div>
+                <small>&copy; 2026 Jukka Palm</small>
+            </div>
+        </aside>
+
+        <!-- Pääsisältö, scrollattava sisältö alkaa tästä -->
+        <main class="main-content">
+
+            <!-- Hero banneri, sivun aloitusosio -->
+            <header class="hero-banneri">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 text-start py-4">
+                            <h1 class="display-1 fw-bold mb-3">Jukka Palm</h1>
+                            <p class="fs-4">
+                                Tieto- ja viestintätekniikan opiskelija sekä intohimoinen ohjelmistokehittäjä. 
+                                Tervetuloa tutustumaan osaamiseeni ja portfoliooni.
+                            </p>
+
+                            <!-- Toimintapainikkeet -->
+                            <div class="d-flex gap-3 justify-content-center justify-content-lg-start mt-4">
+                                <a href="#" class="btn btn-primary-custom px-4 py-2 fw-bold">Katso portfolio, jos uskallat!</a>
+                                <a href="#" class="btn btn-secondary-custom px-4 py-2 fw-bold">Katso myös Github</a>
+                            </div>
+                        </div>
+
+                        <!-- Hero kuva -->
+                        <div class="col-lg-6 text-center">
+                            <img src="images/aboutme-hero.png" alt="Jukka Palm" class="hero-img">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Tietoa minusta -osio -->
+            <section id="tietoa-minusta" class="py-5">
+                <div class="container">
+                    <div class="row mb-5">
+                        <div class="col-lg-8 offset-lg-2 text-center">
+                            <h2 class="display-5 fw-bold">Tietoa minusta</h2>
+                            <hr class="mx-auto">
+                        </div>
+                    </div>
+
+                    <!-- Esittelytekstit kahdessa sarakkeessa -->
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <h3 class="fw-bold mb-3">Miten tähän on päädytty</h3>
+                            <p>
+                                Olen aina ollut kiinnostunut internetistä ja pelien maailmasta. Uteliaisuus tekniikkaa kohtaan 
+                                sekä halu ymmärtää järjestelmien toimintaperiaatteita tekivät ohjelmistokehityksen opiskelusta luonnollisen valinnan.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <h3 class="fw-bold mb-3">Mitä etsin</h3>
+                            <p>
+                                Tällä hetkellä etsin harjoittelupaikkaa, jossa voin kasvaa kehittäjänä, päästä osaksi mielenkiintoisia projekteja 
+                                ja oppia kokeneemmilta kehittäjiltä. Minulla on suuri into oppia jatkuvasti uusia asioita.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <h3 class="fw-bold mb-3">Mitä osaan & Koulutus</h3>
+                            <p>
+                                Ohjelmistokehityksessä minua kiinnostavat erityisesti backend-kehitys ja tietokannat. Nämä ovat vielä kehittyvää osaamisaluetta, mutta haluan oppia niistä lisää ja syventää osaamistani niiden parissa.
+                            </p>
+                            <p>
+                                Koulussa olemme perehtyneet muun muassa C#-, HTML-, CSS-, PHP-, JavaScript-, SQL- kieliin sekä REST API rajapintoihin. Suoritan myös parhaillaan avoimessa AMK:ssa Python-ohjelmoinnin perusteita.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <h3 class="fw-bold mb-3">Persoona</h3>
+                            <p>
+                                Luotan periksiantamattomuuteen ongelmanratkaisussa: jos jokin ei toimi, selvitän miksi. Olen luotettava tiimin jäsen, joka hoitaa oman tonttinsa tarkasti ja auttaa mielellään myös muita. 
+                                Tuon mukanani hyvän annoksen huumoria, aimo annoksen sisua sekä halun tehdä asiat kerralla kunnolla.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Teknologiat -osio -->
+            <section id="teknologiat" class="py-5">
+                <div class="container">
+                    <div class="row mb-5">
+                        <div class="col-lg-8 offset-lg-2 text-center">
+                            <h2 class="display-5 fw-bold">Teknologiat</h2>
+                            <hr class="mx-auto">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 offset-lg-2 text-center mb-4">
+                        <h3 class="fw-bold">Ohjelmointikielet</h3>
+                    </div>
+
+                    <!-- Badget -->
+                    <div class="row justify-content-center g-3 mb-5">
+                        <div class="col-auto">
+                            <div class="tech-badge" style="--badge-color: #68217a;">
+                                <i class="devicon-csharp-plain colored fs-3"></i>
+                                <span>C#</span>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="tech-badge" style="--badge-color: #E34F26;">
+                                <i class="devicon-html5-plain colored fs-3"></i>
+                                <span>HTML</span>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="tech-badge" style="--badge-color: #1572B6;">
+                                <i class="devicon-css3-plain colored fs-3"></i>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="tech-badge" style="--badge-color: #777bb4;">
+                                <i class="devicon-php-plain colored fs-3"></i>
+                                <span>PHP</span>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="tech-badge" style="--badge-color: #f7df1e;">
+                                <i class="devicon-javascript-plain colored fs-3"></i>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="tech-badge" style="--badge-color: #3776ab;">
+                                <i class="devicon-python-plain colored fs-3"></i>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 offset-lg-2 text-center mb-4">
+                        <h3 class="fw-bold">Frameworkit & kirjastot</h3>
+                    </div>
+                    <div class="row justify-content-center g-3 mb-5">
+                        <div class="col-auto">
+                            <div class="tech-badge" style="--badge-color: #7952b3;">
+                                <i class="devicon-bootstrap-plain colored fs-3"></i>
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 offset-lg-2 text-center mb-4">
+                        <h3 class="fw-bold">Muut työkalut</h3>
+                    </div>
+                    <div class="row justify-content-center g-3 mb-5">
+                        <div class="col-auto">
+                            <div class="tech-badge" style="--badge-color: #F05032;">
+                                <i class="devicon-git-plain colored fs-3"></i>
+                                <span>Git</span>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="tech-badge" style="--badge-color: #24292E;">
+                                <i class="devicon-github-original colored fs-3"></i>
+                                <span>GitHub</span>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="tech-badge" style="--badge-color: #00758F;">
+                                <i class="devicon-mysql-plain colored fs-3"></i>
+                                <span>SQL</span>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="tech-badge" style="--badge-color: #f7df1e;">
+                                <i class="devicon-json-plain colored fs-3"></i> 
+                                <span>JSON / API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Koulutus -osio -->
+            <section id="koulutus" class="py-5">
+                <div class="container">
+                    <div class="row mb-5">
+                        <div class="col-lg-8 offset-lg-2 text-center">
+                            <h2 class="display-5 fw-bold">Koulutus</h2>
+                            <hr class="mx-auto">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 offset-lg-2 text-center mb-5">
+                        <h3 class="fw-bold">Tutkinnot & kurssit</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-7 mb-5">
+                            <div class="koulutus-kortti mb-4">
+                                <h4 class="fw-bold">Tieto- ja viestintätekniikan perustutkinto</h4>
+                                <p class="text-muted">Savon ammattiopisto | 02/2025 - Nykyhetki</p>
+                                <p>Erikoistuminen ohjelmointiin ja ohjelmistokehitykseen. Olen keskittynyt opinnoissani erityisesti [Backend/Frontend] -ratkaisuihin ja modernien web-teknologioiden hallintaan.</p>
+                            </div>
+                            <div class="koulutus-kortti-amk">
+                                <h4 class="fw-bold">Avoimen AMK:n kurssit</h4>
+                                <p class="text-muted">Savonia | 2026</p>
+                                <p>Suoritan parhaillaan ohjelmointiin liittyviä opintoja Avoimessa Ammattikorkeakoulussa, mikä täydentää ammatillista osaamistani ja valmistaa jatko-opintoihin.</p>
+                            </div>
+                        </div>
+
+                        <!-- Kielitaito taulukko -->
+                        <div class="col-lg-5">
+                            <h4 class="mb-4 fw-bold">Kielitaito</h4>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Kieli</th>
+                                            <th>Taso</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Suomi</td>
+                                            <td>Äidinkieli</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Englanti</td>
+                                            <td>Hyvä</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ruotsi</td>
+                                            <td>Perusteet</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Yhteydenotto -osio -->
+            <section id="ota-yhteytta" class="py-5">
+                <div class="container">
+                    <div class="row mb-5">
+                        <div class="col-lg-8 offset-lg-2 text-center">
+                            <h2 class="display-5 fw-bold">Ota yhteyttä</h2>
+                            <hr class="mx-auto">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="contact-card p-4 p-md-5">
+                                <form id="contact-form">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <label for="name" class="form-label fw-bold">Nimi</label>
+                                            <input type="text" class="form-control custom-input" id="name" placeholder="Etunimi Sukunimi">
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <label for="email" class="form-label fw-bold">Sähköposti</label>
+                                            <input type="email" class="form-control custom-input" id="email" placeholder="Sähköpostiosoitteesi">
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <label for="message" class="form-label fw-bold">Viesti</label>
+                                        <textarea class="form-control custom-input" id="message" rows="5" placeholder="Kirjoita viestisi tähän..."></textarea>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary-custom px-5 py-3 fw-bold">Lähetä viesti</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mobiilissa näkyvä footeri -->
+            <footer class="d-lg-none py-4 text-center">
+                <div class="container">
+                    <p class="mb-2 fw-bold">Jukka Palm</p>
+                    <div class="mb-2">
+                        <a href="#" class="mx-2"><i class="devicon-github-original"></i></a>
+                        <a href="#" class="mx-2"><i class="devicon-linkedin-plain"></i></a>
+                    </div>
+                    <small class="text-muted">&copy; 2026 Jukka Palm</small>
+                </div>
+            </footer>
+        </main>
+
+        <!-- JavaScriptit Boostrapin kirjasto ja oma scripti -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
