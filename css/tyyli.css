@@ -142,6 +142,15 @@ body {
     border-bottom: 2px solid #084C61;
 }
 
+/* Piilossa gsap fade-in efektin vuoksi */
+.hero-banneri h1, 
+.hero-banneri p, 
+.btn-primary-custom, 
+.btn-secondary-custom, 
+.hero-img {
+    opacity: 0;
+}
+
 h1 {
     color: #084C61;
     font-family: "Chakra Petch", sans-serif;
@@ -228,8 +237,10 @@ h3, h4 {
     align-items: center;
     gap: 8px;
     min-width: 120px;
-    transition: all 0.3s ease;
     cursor: default;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
 }
 
 .tech-badge i {
