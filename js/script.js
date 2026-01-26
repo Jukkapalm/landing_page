@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const bg = document.getElementById("code-background");
 
     // Lista kelluvista koodin pätkistä
-    const codeSnippets = ['<div>', '</div>', '() => { }', 'id="main-content"', '<div class="container">', '@media (min-width: 992px)', 'const x = () => {}', 'display: flex;', 'z-index: 999;', 'foreach($a)', '$_GET["id"]', 'for i in x:'];
+    const codeSnippets = ['for (let i=0; i<5; i++)', 'const x = y || z;', '$db = new PDO($dsn);', 'id="main-content"', '<div class="container">', '@media (min-width: 992px)', '$stmt->execute();', 'display: flex;', 'z-index: 999;', '$_GET["id"]', 'for i in x:', 'gap: 1rem;', 'include("header.php");', 'isset($_POST["submit"]);', '<?php echo $nimi; ?>', '<?php endif; ?>'];
 
     // Koodin pätkien määrä ruudun koon mukaan
     const count = window.innerWidth < 768 ? 4 : 7;
