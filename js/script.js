@@ -122,4 +122,10 @@ document.addEventListener('DOMContentLoaded', function () {
             link.classList.add("active");
         })
     }
+
+    // Haetaan vuosiluku footeriin automaattisesti
+    const yearSpan = document.getElementById("current-year");
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
 });
