@@ -124,8 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Haetaan vuosiluku footeriin automaattisesti
-    const yearSpan = document.getElementById("current-year");
-    if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
-    }
+    document.querySelectorAll(".current-year").forEach(span => {
+        span.textContent = new Date().getFullYear();
+    })
 });
